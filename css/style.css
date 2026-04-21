@@ -130,3 +130,23 @@ button {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* =====================
+   REVIEWS
+===================== */
+.reviews {
+  background: #000;
+  color: #fff;
+  padding: 2.5rem 0;
+}
+
+.review-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.review-grid span {
+  font-style: italic;
+  font-size: 0.9rem;
+}
