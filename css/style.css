@@ -29,3 +29,11 @@ h3 { font-size: 1.266rem; }
 p {
   margin-bottom: 1rem;
 }
+/* =====================
+   LAYOUT
+===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
