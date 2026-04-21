@@ -115,3 +115,18 @@ button {
   cursor: pointer;
   border-radius: 4px;
 }
+
+/* =====================
+   BEHIND SECTION
+===================== */
+.behind {
+  background: #f8fafc;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.behind-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
