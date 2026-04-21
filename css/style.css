@@ -62,3 +62,56 @@ p {
   color: #000;
   font-weight: 500;
 }
+
+/* =====================
+   PRODUCT SECTION
+===================== */
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-images {
+  width: 100%;
+}
+
+.main-img {
+  border-radius: 8px;
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.thumbnail-row img {
+  width: 70px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-info h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.price {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
