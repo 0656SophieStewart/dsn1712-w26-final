@@ -1,0 +1,31 @@
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* =====================
+   TYPOGRAPHY
+===================== */
+h1 { font-size: 2.027rem; }
+h2 { font-size: 1.802rem; margin-bottom: 1rem; }
+h3 { font-size: 1.266rem; }
+
+p {
+  margin-bottom: 1rem;
+}
