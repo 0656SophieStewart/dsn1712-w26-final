@@ -7,6 +7,9 @@
   box-sizing: border-box;
 }
 
+/* =====================
+   BASE
+===================== */
 body {
   font-family: 'Poppins', sans-serif;
   color: #222;
@@ -29,13 +32,14 @@ h3 { font-size: 1.266rem; }
 p {
   margin-bottom: 1rem;
 }
+
 /* =====================
-   LAYOUT
+   CONTAINER
 ===================== */
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 /* =====================
@@ -45,10 +49,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .logo {
-  width: 120px;
+  width: 130px;
 }
 
 .nav ul {
@@ -67,13 +73,17 @@ p {
    PRODUCT SECTION
 ===================== */
 .product {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .product-images {
-  width: 100%;
+  max-width: 500px;
+}
+
+.product-info {
+  max-width: 500px;
 }
 
 .main-img {
@@ -87,13 +97,11 @@ p {
 }
 
 .thumbnail-row img {
-  width: 70px;
+  width: 60px;
   border-radius: 6px;
-  cursor: pointer;
 }
 
 .product-info h3 {
-  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
@@ -106,14 +114,19 @@ p {
   margin: 1rem 0;
 }
 
+.product-info p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
 button {
   background: #000;
   color: #fff;
   border: none;
   padding: 0.7rem 1.4rem;
-  font-size: 0.9rem;
   cursor: pointer;
   border-radius: 4px;
+  margin-top: 1rem;
 }
 
 /* =====================
@@ -121,14 +134,13 @@ button {
 ===================== */
 .behind {
   background: #f8fafc;
-  padding: 2rem 0;
-  margin-top: 2rem;
+  width: 100%;
 }
 
 .behind-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 /* =====================
@@ -137,16 +149,19 @@ button {
 .reviews {
   background: #000;
   color: #fff;
-  padding: 2.5rem 0;
+  width: 100%;
+  padding: 2rem 0;
 }
 
 .review-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .review-grid span {
+  display: block;
+  margin-top: 0.5rem;
   font-style: italic;
   font-size: 0.9rem;
 }
@@ -155,21 +170,20 @@ button {
    MORE PRODUCTS
 ===================== */
 .more {
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: 2rem;
 }
 
 .card {
   background: #f8fafc;
   padding: 1rem;
-  text-align: center;
   border-radius: 8px;
+  text-align: center;
 }
 
 .card img {
@@ -201,21 +215,17 @@ button {
 @media (min-width: 768px) {
 
   .product {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .product-images,
-  .product-info {
-    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 3rem;
   }
 
   .behind-grid {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
   }
 
   .review-grid {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .card-grid {
@@ -233,10 +243,10 @@ button {
   }
 
   .thumbnail-row img {
-    width: 80px;
+    width: 70px;
   }
 
   .logo {
-    width: 140px;
+    width: 150px;
   }
 }
